@@ -12,7 +12,7 @@
       include_tasks: ubuntu.yaml
       when: ansible_distribution == 'Ubuntu'
 
-    - name: 각 노드별 접속 주소 안내
+    - name: 각 노드별 접속 주소 안내 입니다
       debug:
         msg:
           - "{{ ansible_hostname }} => http://{{ ansible_eth0.ipv4.address }}"
