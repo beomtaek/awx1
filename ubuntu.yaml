@@ -2,7 +2,7 @@
       action: "{{ ansible_pkg_mgr }} name=nginx state=latest update_cache=yes"
 
     - name: nginx index.html
-      get_url: url=https://www.kbstar.com dest=/var/www/html/
+      get_url: url=https://www.nginx.com dest=/var/www/html/
 
     - name: stop ufw
       service: name=ufw state=stopped enabled=no
